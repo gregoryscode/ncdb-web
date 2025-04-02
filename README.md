@@ -1,27 +1,28 @@
 # ncdb-web
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+![Built with](https://img.shields.io/badge/built%20with-Angular-DD0031)
+![Language](https://img.shields.io/badge/language-TypeScript-3178C6)
+![Powered by](https://img.shields.io/badge/powered%20by-energy%20drinks-ff69b4)
 
-## Development server
+**NCDB Web** (Night Crows Database) is an Angular-based web application designed to centralize and organize comprehensive information about the game *Night Crows*. It serves as a companion tool for players, offering a detailed and searchable database of:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- 🗺️ Quests  
+- 🎒 Items  
+- 🐎 Mounts  
+- 📘 Guides  
+- 📊 And more game-related content  
 
-## Code scaffolding
+Whether you're a new player or a veteran crow, NCDB aims to help you navigate and master your journey.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<h3>Project status</h3>
 
-## Build
+This project was abandoned before it even got off the ground.
+Like many WEMADE games, Night Crows slowly turned into a money pit 💸 — and so did my motivation to build a companion app for it. NCDB remains here as a reminder of good intentions... and bad gacha decisions.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<h3>Developers</h3>
 
-## Running unit tests
+- Gregory Perozzo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<h3>Ownership</h3>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Gregory Perozzo
