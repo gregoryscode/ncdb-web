@@ -1,0 +1,74 @@
+.quest-container {
+    display: flex;
+    width: 100%;
+}
+
+.quest-container .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.quest-container .container .search {
+    width: 100%;
+}
+
+.quest-container .container .input-search .field {
+    width: 100%;
+    --mdc-outlined-text-field-outline-color: var(--primary-color);
+    /* outline color */
+    --mdc-outlined-text-field-focus-outline-color: #949494;
+    /* focused outline color */
+    --mdc-outlined-text-field-caret-color: #a3a3a3;
+    /* cursor color */
+    --mdc-outlined-text-field-hover-outline-color: var(--primary-color);
+    /* hover outline color */
+    --mdc-outlined-text-field-input-text-placeholder-color: #b6b6b6;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+.quest-container .container .input-search .field input {
+    color: #e6e6e6;
+    background-color: var(--primary-color);
+}
+
+.quest-container .container .input-search .field mat-icon {
+    cursor: pointer;
+    color: #e6e6e6;
+}
+
+.quest-container .container .input-search ::ng-deep .mat-form-field .mat-form-field-wrapper {
+    padding-bottom: 0px;
+}
+
+.quest-container .container .input-search ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+
+.quest-container .container .content {
+    margin-top: 16px;
+    border-radius: 10px;
+}
+
+.quest-container .container .content .table {
+    --mat-table-background-color: var(--primary-color);
+    --mat-paginator-container-background-color: var(--primary-color);
+        /* table header color */
+    --mat-table-header-headline-color: #fff;
+    /* table items color */
+    --mat-table-row-item-label-text-color: #b6b6b6;
+    /* paginator text color */
+    --mat-paginator-container-text-color: #b6b6b6;
+    --mat-table-header-headline-font: 'Montserrat', sans-serif;
+    --mat-table-header-headline-size: 14px;
+    --mat-table-header-headline-weight: 500;
+    --mat-table-row-item-label-text-font:'Montserrat', sans-serif;
+    --mat-table-row-item-label-text-size: 14px;
+    --mat-table-row-item-label-text-weight: 400;
+}
+
+.quest-container .container .content .table table {
+    width: 100%;
+}

@@ -1,0 +1,41 @@
+<div class="quest-container">
+    <div class="container">
+        <div class="input-search">
+            <mat-form-field appearance="outline" class="field">
+                <input matInput id="searchField" name="searchField" #searchField="ngModel" [(ngModel)]="searchTerm"
+                    placeholder="Type a quest name, chapter or reward" autocomplete="off" aria-autocomplete="none"
+                    (keydown.enter)="search()">
+                <mat-icon matSuffix class="icon-search" (click)="search()">search</mat-icon>
+            </mat-form-field>
+        </div>
+        <div class="content">
+            <div class="table mat-elevation-z8">
+                <table mat-table [dataSource]="dataSource" matSort>
+                    <!-- Position Column -->
+                    <ng-container matColumnDef="chapter">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Chapter</th>
+                        <td mat-cell *matCellDef="let element"> Ch. {{element.chapter}} </td>
+                    </ng-container>
+
+                    <!-- Name Column -->
+                    <ng-container matColumnDef="name">
+                        <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+                    </ng-container>
+
+                    <!-- Weight Column -->
+                    <!-- <ng-container matColumnDef="weight">
+                    <th mat-header-cell *matHeaderCellDef> Weight </th>
+                    <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+                  </ng-container>             -->
+
+                    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                </table>
+
+                <mat-paginator [pageSize]="30" [length]="quests?.length" showFirstLastButtons hidePageSize="true">
+                </mat-paginator>
+            </div>
+        </div>
+    </div>
+</div>

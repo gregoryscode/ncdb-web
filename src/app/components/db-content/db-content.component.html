@@ -1,0 +1,17 @@
+<div class="db-content-container">
+    <div class="container">
+        <div class="header">
+            <span class="title">{{selectedMenuItem}}</span>
+        </div>
+        <div class="content">
+            <div class="left">
+                <app-menu-tree class="menu-tree" id="menu-tree-scroll"></app-menu-tree>
+            </div>
+            <div class="right">
+                <div class="right-content">
+                    <app-quest *ngIf="selectedMenuItem === 'Quests'"></app-quest>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

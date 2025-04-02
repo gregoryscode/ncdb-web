@@ -1,0 +1,101 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-container .container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.home-container .container .header {
+    display: flex;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 60px;
+}
+
+.home-container .container .header .left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container .container .header .left .title {
+    font-size: var(--home-header-font-size);
+    font-weight: var(--header-weight);
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black; 
+    color: #fff;
+}
+
+.home-container .container .header .left .subtitle {
+    font-size: var(--home-subheader-font-size);
+    font-weight: var(--subheader-weight);
+    margin-top: 28px;
+    letter-spacing: -0.03em;
+    line-height: 24px;
+    color: #fff;
+    width: 70%;
+}
+
+.home-container .container .header .left .browse {
+    font-size: var(--home-subheader-font-size);
+    font-weight: var(--subheader-weight);
+    margin-top: 16px;
+    letter-spacing: -0.03em;
+    line-height: 24px;
+    color: #fff;
+    width: fit-content;
+    padding: 22px;
+    border-color: #636363;
+    font-weight: 500;
+}
+
+.home-container .container .header .right {
+    width: 30%;
+}
+
+
+
+.db-content-container .container .content {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.db-content-container .container .content .left {
+    width: 23%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding-right: 3px;
+}
+
+.db-content-container .container .content .left app-menu-tree {
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-color: #d3d3d3 var(--secondary-color);
+}
+
+.db-content-container .container .content .right {
+    width: 77%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;
+}
+
+.db-content-container .container .content .right .right-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}

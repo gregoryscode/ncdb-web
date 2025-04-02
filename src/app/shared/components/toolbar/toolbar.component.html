@@ -1,0 +1,92 @@
+<div class="toolbar-container">
+    <div class="container-top">
+        <div class="left">
+            <span class="title" (click)="goTo(null)">NCDB</span>
+            <img src="assets/img/img_ncdb_logo.png" class="logo" (click)="goTo(null)">
+        </div>
+        <div class="right">
+            <div class="language">
+                <div class="select-language">
+                    <mat-form-field class="select" appearance="outline">
+                        <mat-icon matPrefix class="material-symbols-outlined">translate</mat-icon>
+                        <mat-select [(value)]="selectedLanguage" disableRipple>
+                            <mat-option class="option" *ngFor="let item of languages"
+                                [value]="item">{{item}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="input-search">
+                    <mat-form-field class="field" appearance="outline">
+                        <input matInput type="text" placeholder="Search database, quests..." [(ngModel)]="search"
+                            autocomplete="off">
+                        <mat-icon matSuffix *ngIf="search" (click)="search=''">close</mat-icon>
+                    </mat-form-field>
+                </div>
+                <mat-icon class="icon material-symbols-outlined">bookmark</mat-icon>
+                <mat-icon class="icon material-symbols-outlined">account_circle</mat-icon>
+            </div>
+        </div>
+    </div>
+    <mat-divider class="divider-top-bottom"></mat-divider>
+    <div class="container-bottom">
+        <div class="left">
+            <div class="item database">
+                <button mat-raised-button class="button" [matMenuTriggerFor]="menu">
+                    <span>Database</span>
+                    <mat-icon class="material-symbols-outlined" iconPositionEnd>expand_more</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item *ngFor="let item of databaseMenuItems" type="button"
+                        (click)="goTo(item)" [class.menu-item-selected]="selectedMenuItem === item.description"><mat-icon [svgIcon]="item.icon"></mat-icon>{{item.description}}
+                    </button>
+                </mat-menu>
+            </div>
+            <div class="item button-container">
+                <button mat-button class="button" type="button">
+                    <span>Gliders</span>
+                    <mat-icon class="material-symbols-outlined" iconPositionStart svgIcon="gliders_icon"></mat-icon>
+                </button>
+            </div>
+            <div class="item button-container">
+                <button mat-button class="button" type="button">
+                    <span>Mounts</span>
+                    <mat-icon class="material-symbols-outlined" iconPositionStart svgIcon="mounts_icon"></mat-icon>
+                </button>
+            </div>
+            <div class="item button-container">
+                <button mat-button class="button" type="button">
+                    <span>W.S</span>
+                    <mat-icon class="material-symbols-outlined" iconPositionStart svgIcon="ws_icon"></mat-icon>
+                </button>
+            </div>
+            <div class="item button-container">
+                <button mat-button class="button" type="button">
+                    <span>Outfit</span>
+                    <mat-icon class="material-symbols-outlined" iconPositionStart svgIcon="outfit_icon"></mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="right">
+            <a href="https://www.nightcrows.com/en/notice/notice" target="_blank" class="item">
+                <div class="external">
+                    <span>News</span>
+                    <mat-icon class="material-symbols-outlined">open_in_new</mat-icon>
+                </div>
+            </a>
+            <a href="https://www.nightcrows.com/en/notice/event/ongoing" target="_blank" class="item">
+                <div class="external">
+                    <span>Events</span>
+                    <mat-icon class="material-symbols-outlined">open_in_new</mat-icon>
+                </div>
+            </a>
+            <a href="https://www.nightcrows.com/en/notice/release" target="_blank" class="item">
+                <div class="external">
+                    <span>Patch Notes</span>
+                    <mat-icon class="material-symbols-outlined">open_in_new</mat-icon>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

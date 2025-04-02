@@ -1,0 +1,279 @@
+.toolbar-container {
+    /* height: 120px; */
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.03em;
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.toolbar-container .container-top {
+    display: flex;
+    width: 1200px;
+}
+
+.toolbar-container .container-top .left {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.toolbar-container .container-top .left span {
+    font-size: 36px;
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e6e6e6;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px black;
+    margin-right: 5px;
+}
+
+.toolbar-container .container-top .left img {
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    filter: drop-shadow(0.20rem 0.20rem 0.15rem rgba(0, 0, 0, 0.5));
+}
+
+.toolbar-container .container-top .right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.toolbar-container .container-top .right .language {
+    margin-right: 16px;
+}
+
+.toolbar-container .container-top .right .language .select-language ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+
+.toolbar-container .container-top .right .language .select-language .select {
+    width: 165px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    --mdc-outlined-text-field-outline-color: var(--secondary-color);
+    /* outline color */
+    --mdc-outlined-text-field-focus-outline-color: #949494;
+    /* focused outline color */
+    --mdc-outlined-text-field-caret-color: #a3a3a3;
+    /* cursor color */
+    --mdc-outlined-text-field-hover-outline-color: var(--secondary-color);
+    /* hover outline color */
+    --mdc-outlined-text-field-input-text-placeholder-color: #b6b6b6;
+    /* default arrow color */
+    --mat-select-enabled-arrow-color: #b6b6b6;
+    /* focused arrow color */
+    --mat-select-focused-arrow-color: #949494;
+}
+
+/* option selected color */
+.toolbar-container .container-top .right .language .select-language .select mat-select {
+    color: #b6b6b6;
+}
+
+/* list option selected color */
+::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+    --mat-option-selected-state-label-text-color: rgba(0, 0, 0, 0.87) !important;
+}
+
+/* list option selected hover color */
+::ng-deep .mat-mdc-option.mdc-list-item--selected:hover {
+    background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+/* list option selected background color */
+::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) {
+    --mat-option-selected-state-layer-color: #fff !important;
+}
+
+/* option selected check icon */
+::ng-deep .mat-mdc-option .mat-pseudo-checkbox {
+    display: none !important;
+}
+
+/* outlined thickness */
+.toolbar-container .container-top .right .language .select-language ::ng-deep .mdc-text-field--outlined {
+    --mdc-outlined-text-field-outline-width: 0.5px !important;
+    --mdc-outlined-text-field-focus-outline-width: 0.5px !important;
+}
+
+.toolbar-container .container-top .right .language .select-language .select .material-symbols-outlined {
+    color: #fff;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.toolbar-container .container-top .right .menu {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-container .container-top .right .menu a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.toolbar-container .container-top .right .menu a:not(:last-child) {
+    margin-right: 30px;
+}
+
+.toolbar-container .container-top .right .menu mat-icon.icon {
+    font-size: 35px;
+    height: 35px;
+    width: 35px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.toolbar-container .container-top .right .menu mat-icon:not(:last-child) {
+    margin-right: 20px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.toolbar-container .container-top .right .menu .input-search {
+    margin-right: 20px;
+}
+
+.toolbar-container .container-top .right .menu .input-search .field {
+    --mdc-outlined-text-field-outline-color: var(--secondary-color);
+    /* outline color */
+    --mdc-outlined-text-field-focus-outline-color: #949494;
+    /* focused outline color */
+    --mdc-outlined-text-field-caret-color: #a3a3a3;
+    /* cursor color */
+    --mdc-outlined-text-field-hover-outline-color: var(--secondary-color);
+    /* hover outline color */
+    --mdc-outlined-text-field-input-text-placeholder-color: #b6b6b6;
+    width: 400px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+}
+
+.toolbar-container .container-top .right .menu .input-search .field input {
+    color: #e6e6e6;
+    background-color: var(--secondary-color);
+}
+
+.toolbar-container .container-top .right .menu .input-search .field mat-icon {
+    cursor: pointer;
+    color: #e6e6e6;
+}
+
+/* outlined thickness */
+.toolbar-container .container-top .right .menu .input-search ::ng-deep .mdc-text-field--outlined {
+    --mdc-outlined-text-field-outline-width: 0.5px !important;
+    --mdc-outlined-text-field-focus-outline-width: 0.5px !important;
+}
+
+.toolbar-container .container-top .right .menu .input-search ::ng-deep .mat-form-field .mat-form-field-wrapper {
+    padding-bottom: 0px;
+}
+
+.toolbar-container .container-top .right .menu .input-search ::ng-deep .mat-mdc-form-field-subscript-wrapper {
+    display: none;
+}
+
+:host ::ng-deep .mat-mdc-text-field-wrapper {
+    height: 40px !important;
+}
+
+:host ::ng-deep .mat-mdc-form-field-flex {
+    margin-top: -7px !important;
+}
+
+.toolbar-container .divider-top-bottom {    
+    width: 100%;
+    border-color: var(--secondary-color);
+    
+    margin-top: 20px;
+}
+
+.toolbar-container .container-bottom {
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.toolbar-container .container-bottom .left {
+    display: flex;
+}
+
+.toolbar-container .container-bottom .left .item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.toolbar-container .container-bottom .left .database .button {
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* change background menu button */
+::ng-deep button.mat-mdc-menu-item.menu-item-selected {
+    background-color: #d4d4d4da !important;
+}
+
+.toolbar-container .container-bottom .left .button-container .button {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.toolbar-container .container-bottom .left .button-container .button mat-icon {
+    font-size: 23px;
+    height: 23px;
+    width: 23px;
+}
+
+.toolbar-container .container-bottom .right {
+    display: flex;
+}
+
+.toolbar-container .container-bottom .right a {
+    text-decoration: none;
+}
+
+.toolbar-container .container-bottom .right .item:not(:last-child) {
+    margin-right: 26px;
+}
+
+.toolbar-container .container-bottom .right .item mat-icon {
+    margin-left: 5px;
+}
+
+.toolbar-container .container-bottom .right .external {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}

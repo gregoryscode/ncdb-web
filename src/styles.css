@@ -1,0 +1,31 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color: #696969;
+    /* background-color: hsl(0, 0%, 12%); */
+    -webkit-font-smoothing: antialiased;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+}
+
+:root {
+    --primary-color: #414141;
+    --secondary-color: #525252;
+    --background-color: #e5e5e5;
+    --text-color: #2d2d2d;
+    --home-header-font-size: 40px;
+    --header-font-size: 16px;
+    --header-weight: 500;
+    --home-subheader-font-size: 18px;
+    --subheader-font-size: 14px;
+    --subheader-weight: 400;
+  }
